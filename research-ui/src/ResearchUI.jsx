@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 // Point this at wherever api_server.py is running.
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://multi-agent-research-system-5rd4.onrender.com";
 
 const STAGES = [
   {
