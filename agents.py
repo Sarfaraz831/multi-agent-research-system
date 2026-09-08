@@ -1,6 +1,7 @@
 from langchain.agents import create_agent
 from langchain_mistralai import ChatMistralAI
 from langchain_google_genai import GoogleGenerativeAI
+from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from tools import web_search, scrape_url
@@ -9,11 +10,12 @@ import os
 
 load_dotenv()
 
+llm = ChatGroq(model="openai/gpt-oss-120b",temperature=0.1)
 
-llm = ChatMistralAI(
-    model="mistral-small-latest",
-    temperature=0.1,
-    )
+# llm = ChatMistralAI(
+#     model="mistral-small-latest",
+#     temperature=0.1,
+#     )
 
 # llm = GoogleGenerativeAI(
 #     model = "gemini-2.5-flash"
