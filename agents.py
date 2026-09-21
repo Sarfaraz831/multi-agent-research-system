@@ -18,7 +18,8 @@ load_dotenv()
 #     )
 
 llm = GoogleGenerativeAI(
-    model = "gemini-2.5-flash"
+    model = "gemini-2.5-flash",
+    temperature=0.2
 )
 
 
