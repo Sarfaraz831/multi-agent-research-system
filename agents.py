@@ -10,16 +10,16 @@ import os
 
 load_dotenv()
 
-llm = ChatGroq(model="openai/gpt-oss-120b",temperature=0.1)
+# llm = ChatGroq(model="openai/gpt-oss-120b",temperature=0.1)
 
 # llm = ChatMistralAI(
 #     model="mistral-small-latest",
 #     temperature=0.1,
 #     )
 
-# llm = GoogleGenerativeAI(
-#     model = "gemini-2.5-flash"
-# )
+llm = GoogleGenerativeAI(
+    model = "gemini-2.5-flash"
+)
 
 
 # tavily agent
