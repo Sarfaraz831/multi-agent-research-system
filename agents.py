@@ -10,7 +10,7 @@ import os
 
 load_dotenv()
 
-llm = ChatGroq(model="meta-llama/llama-prompt-guard-2-86m",temperature=0.1)
+llm = ChatGroq(model="openai/gpt-oss-20b",temperature=0.1)
 
 # llm = ChatMistralAI(
 #     model="mistral-small-latest",
